@@ -11,15 +11,20 @@ import Layanan from "@/app/components/layanan";
 import Staff from "@/app/components/staff";
 import StaffSlide from "@/app/components/staffSlide";
 import Sorotan from "@/app/components/sorotan";
+import {ImagesSlidertest} from "@/app/components/hero1";
+import Footer from "@/app/components/footer";
+import ButtonTop from "@/app/components/btnTop";
 // import ImageSlider from "@/app/components/ui/slider";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
+        <ButtonTop />
         <Navbar />
-        <ImagesSliderDemo />
+        <ImagesSlidertest />
+        {/*<ImagesSliderDemo />*/}
         <Profile />
-        <div className="py-8 flex flex-col gap-6">
+        <div className="py-8 flex flex-col gap-10 pt-20" id="layanan">
             <div className="">
                 <h1 className="text-2xl font-semibold text-center">Pelayanan Utama Kami</h1>
                 <p className="w-2/3 mx-auto text-center">
@@ -28,7 +33,7 @@ export default function Home() {
                     pelayanan sosial lainnya. Adapun pelayanan utama kami berfokus pada 4 point berikut ini, yaitu :
                 </p>
             </div>
-            <div className="flex gap-20 px-4">
+            <div className="flex px-10 justify-around">
                 <Layanan/>
                 <Jadwal/>
             </div>
@@ -38,7 +43,7 @@ export default function Home() {
 
         <Sorotan />
 
-        {/*<ImageSlider />*/}
+        <Footer />
     </main>
   );
 }
