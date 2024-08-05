@@ -10,36 +10,96 @@ interface Staff {
 
 const staffData: Staff[] = [
     {
-        name: 'PERI IRAWAN',
-        position: 'Kepala Dusun 1',
+        name: 'ASEP BUDI WAHYUDIN',
+        position: 'KEPALA DESA DIRGAHAYU',
         description: 'Kepala Dusun memiliki fungsi: Pembinaan ketenteraman dan ketertiban, pelaksanaan upaya perlindungan masyarakat, mobilitas kependudukan, dan penataan dan pengelolaan wilayah. Mengawasi pelaksanaan pembangunan di wilayahnya.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Peri'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Agisna'
     },
     {
-        name: 'RIZKY',
-        position: 'Kepala Dusun 2',
+        name: 'RINI SURYANI',
+        position: 'SEKRETARIS DESA',
         description: 'kajdlajjkfj lkjdfs lskdfj ',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Rizky'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Rini'
     },
     {
-        name: 'ALI',
-        position: 'Kepala Dusun 3',
+        name: 'DEWI ROSMAWATI',
+        position: 'KAUR PERENCANAAN',
         description: 'ksjd aksjd asd',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ali'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dewi'
     },
     {
-        name: 'JOKO',
-        position: 'Kepala Dusun 4',
+        name: 'SENDHY BUDHY UTAMA',
+        position: 'KASI KESEJAHTERAAN',
         description: 'kjalkdjf lkjkl;ak lkajdf adf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Joko'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Sendhy'
     },
     {
-        name: 'SUSI',
+        name: 'DANY SOMANTIKA',
         position: 'Kepala Dusun 5',
-        description: 'jflkajdf lakjflkalkj lakdjf       ',
+        description: 'jflkajdf lakjflkalkj lakdjf',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Susi'
     },
+    {
+        name: 'IDA SITI SOIDAH',
+        position: 'KAUR TU DAN UMUM',
+        description: 'KJSAFDKASJF',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida'
+    },
+    {
+        name: 'DUDUNG',
+        position: 'KASI PELAYANAN',
+        description: 'kajdlajjkfj lkjdfs lskdfj ',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dudung'
+    },
+    {
+        name: 'HENDI',
+        position: 'KEPWIL PALUMBUNGAN',
+        description: 'ksjd aksjd asd',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Hendi'
+    },
+    {
+        name: 'DENI',
+        position: 'KEPWIL TROWEK',
+        description: 'kjalkdjf lkjkl;ak lkajdf adf',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Deni'
+    },
+    {
+        name: 'AI NINING',
+        position: 'KEPWIL GEKBRONG',
+        description: 'jflkajdf lakjflkalkj lakdjf',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AI'
+    },
+    {
+        name: 'ANNISA RAHAYU',
+        position: 'KEPWIL CIJOTANG',
+        description: 'KJSAFDKASJF',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida'
+    },
     // Tambahkan staff lain di sini
+    {
+        name: 'RISMA',
+        position: 'KEPWIL CIPEUSING',
+        description: 'ksjd aksjd asd',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Risma'
+    },
+    {
+        name: 'YAYA ROHANA',
+        position: 'KEPWIL CILENGKONG',
+        description: 'kjalkdjf lkjkl;ak lkajdf adf',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Yaya'
+    },
+    {
+        name: 'ANAN ROSIDIN',
+        position: 'KEPWIL DESA',
+        description: 'jflkajdf lakjflkalkj lakdjf',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Anan'
+    },
+    {
+        name: 'ALI NURDIN',
+        position: '-',
+        description: 'KJSAFDKASJF',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ali'
+    },
 ];
 
 const StaffSlide: React.FC = () => {
@@ -61,12 +121,12 @@ const StaffSlide: React.FC = () => {
     }, []);
 
     return (
-        <div className="text-center py-10 w-2/3 flex flex-col">
+        <div id="struktur" className="text-center py-10 flex flex-col border-t-2 border-bg">
             <h2 className="text-2xl font-bold mb-4">STAFF DESA DIRGAHAYU</h2>
             <p className="text-lg mb-8">
                 Berikut adalah profil staff desa mulai dari kepala desa, sekretaris desa dan jajarannya, serta deskripsi singkat terkait posisi pekerjaan yang di pegang.
             </p>
-            <div className="relative flex items-center justify-center    h-[400px]">
+            <div className="relative flex items-center justify-center h-[400px]">
                 <button
                     className="absolute top-1/2 left-0 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={prevSlide}
