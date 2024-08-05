@@ -1,3 +1,25 @@
+# Profil Desa
+## A. Keadaan Umum
+Desa Dirgahayu merupakan salah satu Desa  yang pemekaran dari Desa Kadipaten pada tanggal 02 Bulan Juni Tahun 1980. Desa Dirgahayu berada di Kecamatan Kaditapaten yang memiliki 6 Dusun, yaitu : Palumbungan, Trowek, Gekbrong, Cijotang, Cipeusing, dan Cilongkeang. Adapun Visi Misi Desa Dirgahayu adalah sebagai berikut :
+
+### Visi
+**DESA DIRGAHAYU SEBAGAI LELMBAGA PELAYANAN MASYARAKAT YANG PROFESIONAL MENUJU KESEJAHTERAAN MASYARAKAT YANG BERAKHLAKUL KARIMAH YANG DILANDASI IMAN DAN TAQWA**
+
+### Misi
+1. Meningkatkan Sumber Daya Manusia (SDM)
+2. Mewujudkan Peningkatan Pemberdayaan Masyarakat Menggali Sumber Daya Alam (SDA)
+3. Terwujudnya insfrastruktur pembangunan pedesaan guna mendukung potensi Sumber Daya Alam (SDA) serta Sumber Daya Manusia (SDA).
+4. Peningkatan  pelayanan masyarakat yang maksimal.
+5. Terciptanya suasana ketertiban dan keamanan.
+6. Meningkatkan kerjasama dan disiplin terhadap Aparatur Pemerintah Desa.
+7. Menyelenggarakan kegiatan tertib administrasi Pemerintah Desa.
+8. Membangun da n mendorong majunya bidang pembangunan fisik material serta mental spiritual dengan membuka akses terhadap inpestor baik dari dalam maupun luar.
+9. Membangun dan mendorong terciptanya pendidikan yang menghasilkan insan intelektual serta mampu menciptakan lapangan pekerjaan.
+10. Membangun kemandirian dalam usaha serta pemanfaatan sumber daya alam yang ada dan tidak ketergantungan kepada pencarian lapangan kerja.
+11. Membangun dan mendorong terciptanya sarana pendidikan umum dan agama sehingga menghasilkan generasi penerus yang siap pakai.
+12. Membangun dan mendorong majunya bidang pendidikan baik formal maupun non formal serta pendidikan agama yang mudah dan murah.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -7,7 +29,7 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
+yarn dev    
 # or
 pnpm dev
 # or
