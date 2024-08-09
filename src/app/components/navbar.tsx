@@ -1,14 +1,30 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    };
+    }
+
+    const handleScroll = () => {
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    });
 
     return (
         <nav
@@ -16,9 +32,55 @@ export default function Navbar() {
             aria-label="Main Navigation"
         >
             <Link href="/" className="flex items-center font-bold gap-2">
-                <Image src="/LogoFix.png" alt="Logo" width={40} height={40} />
+                <Image src="/LogoFix.png" alt="Logo" width={40} height={40}/>
                 <h1 className="text-xl">DESA DIRGAHAYU</h1>
             </Link>
+
+            <ul
+                className={`lg:flex lg:items-center lg:gap-6 lg:p-0 p-4 absolute lg:relative top-full left-0 w-full lg:w-auto bg-gray-100 bg-opacity-60 backdrop-blur-lg lg:bg-transparent shadow-lg lg:shadow-none transition-all duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'}`}
+                role="menu"
+            >
+                <li role="none">
+                    <Link
+                        href="/" role="menuitem"
+                        tabIndex={0}
+                        className="font-medium hover:text-fg"
+                    >
+                        Beranda
+                    </Link>
+                </li>
+                <li role="none">
+                    <Link
+                        href="/about"
+                        role="menuitem"
+                        tabIndex={0}
+                        className="font-medium hover:text-fg"
+                    >
+                        Tentang
+                    </Link>
+                </li>
+                <li role="none">
+                    <Link
+                        href="/pelayanan"
+                        role="menuitem"
+                        tabIndex={0}
+                        className="font-medium hover:text-fg"
+                    >
+                        Pelayanan
+                    </Link>
+                </li>
+                <li role="none">
+                    <Link
+                        href="/#struktur"
+                        role="menuitem"
+                        tabIndex={0}
+                        className="font-medium hover:text-fg"
+                    >
+                        Struktur
+                    </Link>
+                </li>
+            </ul>
+
             <div className="lg:hidden">
                 <button
                     onClick={toggleMenu}
@@ -26,27 +88,9 @@ export default function Navbar() {
                     aria-expanded={isMenuOpen}
                     className="text-black"
                 >
-                    <Icon icon={isMenuOpen ? "mingcute:close-line" : "mingcute:menu-line"} className="text-2xl" />
+                    <Icon icon={isMenuOpen ? "mingcute:close-line" : "mingcute:menu-line"} className="text-2xl"/>
                 </button>
             </div>
-
-            <ul
-                className={`flex-col lg:flex-row gap-6 p-4 lg:p-0 lg:items-center lg:flex ${isMenuOpen ? 'block' : 'hidden'} transition-all duration-300 ease-in-out`}
-                role="menu"
-            >
-                <li role="none">
-                    <Link href="/" role="menuitem" tabIndex={0} className="font-bold">Beranda</Link>
-                </li>
-                <li role="none">
-                    <Link href="/#about" role="menuitem" tabIndex={0}>Tentang</Link>
-                </li>
-                <li role="none">
-                    <Link href="/#layanan" role="menuitem" tabIndex={0}>Pelayanan</Link>
-                </li>
-                <li role="none">
-                    <Link href="/#struktur" role="menuitem" tabIndex={0}>Struktur</Link>
-                </li>
-            </ul>
         </nav>
     );
 }
