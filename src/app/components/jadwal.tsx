@@ -14,7 +14,7 @@ const Item = ({ hari, jam }: JadwalCardProps) => {
 
 export default function Jadwal() {
     return (
-        <div className="border rounded-xl border-black flex flex-col w-1/4 py-2 shadow-slate-500 shadow-lg">
+        <div className="border rounded-xl border-black flex flex-col lg:w-1/4 py-2 shadow-slate-500 shadow-lg">
             <div className="py-2 border-b border-black">
                 <h1 className="text-center font-semibold">Waktu dan Hari Kerja</h1>
             </div>
