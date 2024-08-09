@@ -9,7 +9,7 @@ type SorotanCardProps = {
 
 const SorotanCard = ({title, description, image, tagline}: SorotanCardProps) => {
     return (
-        <div className="flex px-10 gap-10">
+        <div className="flex flex-col lg:flex-row px-10 lg:gap-10">
             <GlareCard className="w-screen  ">
                 <img
                     className="h-full w-full absolute inset-0 object-cover"
@@ -17,7 +17,7 @@ const SorotanCard = ({title, description, image, tagline}: SorotanCardProps) => 
                 />
             </GlareCard>
             <div className="flex flex-col items-start justify-center max-w-xl py-8 px-6">
-                <p>{tagline}</p>
+                <p className="text-fg">{tagline}</p>
                 <h1 className="font-bold text-2xl">{title}</h1>
                 <p className="font-normal text-base mt-4">
                     {description}
@@ -29,7 +29,7 @@ const SorotanCard = ({title, description, image, tagline}: SorotanCardProps) => 
 
 export default  function Sorotan() {
     return (
-    <div className="flex flex-col gap-10 text-white  bg-gradient-to-b from-bg to-primary py-5 w-full items-center">
+    <div className="flex flex-col gap-10 py-10 w-full items-center" id="sorotan">
             <div>
                 <h1 className="text-2xl font-semibold text-center">Sorotan</h1>
                 <p className="w-2/3 mx-auto text-center">
