@@ -13,9 +13,9 @@ const staffData: Staff[] = [
         name: 'ASEP BUDI WAHYUDIN',
         position: 'KEPALA DESA DIRGAHAYU',
         description: 'Kepala Dusun memiliki fungsi: Pembinaan ketenteraman dan ketertiban, pelaksanaan upaya perlindungan masyarakat, mobilitas kependudukan, dan penataan dan pengelolaan wilayah. Mengawasi pelaksanaan pembangunan di wilayahnya.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Agisna'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Asep'
     },
-    {
+{
         name: 'RINI SURYANI',
         position: 'SEKRETARIS DESA',
         description: 'kajdlajjkfj lkjdfs lskdfj ',
@@ -121,9 +121,9 @@ const StaffSlide: React.FC = () => {
     }, []);
 
     return (
-        <div id="struktur" className="text-center py-10 flex flex-col border-t-2 border-bg">
+        <div id="struktur" className="mt-5 text-center py-10 flex flex-col border-t-2 border-bg">
             <h2 className="text-2xl font-bold mb-4">STAFF DESA DIRGAHAYU</h2>
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 w-2/3 mx-auto">
                 Berikut adalah profil staff desa mulai dari kepala desa, sekretaris desa dan jajarannya, serta deskripsi singkat terkait posisi pekerjaan yang di pegang.
             </p>
             <div className="relative flex items-center justify-center h-[400px]">
@@ -131,7 +131,6 @@ const StaffSlide: React.FC = () => {
                     className="absolute top-1/2 left-0 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={prevSlide}
                 >
-                    {/*&lt;*/}
                     <Icon icon="ep:arrow-left-bold" />
                 </button>
                 <div className="transition-transform duration-1000 ease-in-out transform">
