@@ -1,17 +1,16 @@
 
 export default function VisiMisi() {
     return (
-        <div className="lg:flex flex-col gap-10 px-20 my-8">
+        <div className="flex flex-col gap-10 px-4 md:px-20 my-8">
             <div className="border border-primary py-4 px-8 h-max rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">VISI</h2>
+                <h2 className="text-xl font-bold mb-4">VISI</h2>
                 <p className="font-semibold">
-                    DESA DIRGAHAYU SEBAGAI LELMBAGA PELAYANAN MASYARAKAT YANG PROFESIONAL MENUJU KESEJAHTERAAN
-                    MASYARAKAT YANG BERAKHLAKUL KARIMAH YANG DILANDASI IMAN DAN TAQWA
-
+                    {"\""} DESA DIRGAHAYU SEBAGAI LELMBAGA PELAYANAN MASYARAKAT YANG PROFESIONAL MENUJU KESEJAHTERAAN
+                    MASYARAKAT YANG BERAKHLAKUL KARIMAH YANG DILANDASI IMAN DAN TAQWA {"\""}
                 </p>
             </div>
             <div className="border border-primary py-4 px-8 h-max rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">MISI</h2>
+                <h2 className="text-xl font-bold mb-4">MISI</h2>
                 <ol className="list-decimal">
                     <li>Meningkatkan Kesejahteraan Manusia (SDM).</li>
                     <li>Mewujudkan Peningkatan Pemberdayaan Masyarakat Menggali Sumber Daya Alam (SDA)</li>
