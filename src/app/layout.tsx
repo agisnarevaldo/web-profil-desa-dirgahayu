@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Desa Dirgahayu",
   description: "Profil Desa Dirgahayu Kecamatan Kadipaten Kabupaten Tasikmalaya",
   icons: {
-    icon: "/LogoFix.png",
+  icon: "/LogoFix.png",     
   },
 };
 
