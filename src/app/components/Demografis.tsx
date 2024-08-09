@@ -36,8 +36,8 @@ const DataDemografis = () => {
 
     return (
         <div className="container mx-auto mt-5">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">Gambaran Umum Demografis</h2>
-            <table className="table-auto w-full bg-white shadow-lg rounded-lg overflow-hidden text-center">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">Gambaran Umum Demografis</h2>
+            <table className="table-auto w-full bg-white shadow-lg lg:rounded-lg overflow-hidden text-center">
                 <thead className="bg-bg text-white">
                 <tr>
                     <th className="px-4 py-2">Kategori</th>
