@@ -20,25 +20,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
         <ButtonTop />
-        <Navbar />
         <ImagesSlidertest />
         {/*<ImagesSliderDemo />*/}
         <Profile />
-        <div className="py-8 flex flex-col gap-10 pt-20" id="layanan">
-            <div className="">
-                <h1 className="text-2xl font-semibold text-center">Pelayanan Utama Kami</h1>
-                <p className="w-2/3 mx-auto text-center">
-                    Desa Dirgahayu memiliki banyak fasilitas pelayanan masyarakat mulai dari pelayanan administratif
-                    hingga
-                    pelayanan sosial lainnya. Adapun pelayanan utama kami berfokus pada 4 point berikut ini, yaitu :
-                </p>
-            </div>
-            <div className="flex px-10 justify-around">
-                <Layanan/>
-                <Jadwal/>
-            </div>
 
-        </div>
         <StaffSlide />
 
         <Sorotan />
