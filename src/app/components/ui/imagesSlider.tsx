@@ -20,7 +20,7 @@ export const ImagesSlider = ({
     overlay?: React.ReactNode;
     overlayClassName?: string;
     className?: string;
-    autoplay?: boolean;
+    autoplay?               : boolean;
     direction?: "up" | "down";
 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -100,7 +100,7 @@ export const ImagesSlider = ({
     const areImagesLoaded = loadedImages.length > 0;
 
     const handleClick = () => {
-        const targetElement = document.getElementById("about");
+        const targetElement = document.getElementById("sorotan");
         if (targetElement) {
             targetElement.scrollIntoView({behavior: "smooth"});
         }
@@ -118,7 +118,7 @@ export const ImagesSlider = ({
         >
             <div className="relative flex flex-col z-50 justify-center h-screen">
                 <motion.p
-                    className="font-bold md:max-w-xl md:h-1/2 mx-auto text-xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-t from-neutral-50 to-secondary py-4">
+                    className="font-bold text-3xl md:max-w-xl md:h-1/2 mx-auto md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-t from-neutral-50 to-secondary py-4">
                     {texts[currentIndex]}
                 </motion.p>
                 <button
