@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Desa Dirgahayu",
   description: "Profil Desa Dirgahayu Kecamatan Kadipaten Kabupaten Tasikmalaya",
+  icons: {
+    icon: "/LogoFix.png",
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Navbar    />
+      <Navbar />
         {children}
       </body>
     </html>
