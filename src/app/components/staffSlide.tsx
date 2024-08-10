@@ -12,30 +12,30 @@ const staffData: Staff[] = [
     {
         name: 'ASEP BUDI WAHYUDIN',
         position: 'KEPALA DESA DIRGAHAYU',
-        description: 'Kepala Dusun memiliki fungsi: Pembinaan ketenteraman dan ketertiban, pelaksanaan upaya perlindungan masyarakat, mobilitas kependudukan, dan penataan dan pengelolaan wilayah. Mengawasi pelaksanaan pembangunan di wilayahnya.',
+        description: 'Kepala Desa berkedudukan sebagai Kepala Pemerintah Desa yang memimpin penyelenggaraan Pemerintahan Desa. Kepala Desa bertugas menyelenggarakan Pemerintah Desa, melaksanakan pembangunan Desa, pembinaan kemasyarakatan dan pemberdayaan masyarakat Desa.',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Asep'
     },
 {
         name: 'RINI SURYANI',
         position: 'SEKRETARIS DESA',
-        description: 'kajdlajjkfj lkjdfs lskdfj ',
+        description: 'Dalam rangka penyelenggaraan pemerintahan desa yang baik (good governance), Sekretaris Desa mempunyai tanggung jawab untuk membantu Kepala Desa di bidang administrasi dan memberikan pelayanan teknis administrasi kepada seluruh perangkat Pemerintah Desa dan masyarakat.',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Rini'
     },
     {
         name: 'DEWI ROSMAWATI',
         position: 'KAUR PERENCANAAN',
-        description: 'ksjd aksjd asd',
+        description: 'Kepala seksi (Kasi) pemerintahan ini bertugas membantu Kepala Desa dalam melaksanakan tugas bidang pemerintahan desa. Selain tugas tersebut, Kasi Pemdes juga bertugas : melakukan tindakan yang mengakibatkan pengeluaran atas beban anggaran belanja sesuai bidang tugasnya.',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dewi'
     },
     {
         name: 'SENDHY BUDHY UTAMA',
         position: 'KASI KESEJAHTERAAN',
-        description: 'kjalkdjf lkjkl;ak lkajdf adf',
+        description: 'Kepala seksi kesejahteraan (Kasi Kesra) ini bertugas membantu Kepala Desa dalam melaksanakan tugas bidang pembangunan dan pemberdayaan masyarakat desa.',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Sendhy'
     },
     {
         name: 'DANY SOMANTIKA',
-        position: 'Kepala Dusun 5',
+    position: 'Kepala Dusun 5',     
         description: 'jflkajdf lakjflkalkj lakdjf',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Susi'
     },
