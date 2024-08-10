@@ -3,8 +3,8 @@ export default function VisiMisi() {
     return (
         <div className="flex flex-col gap-10 px-4 md:px-20 my-8">
             <div className="border border-primary py-4 px-8 h-max rounded-lg">
-                <h2 className="text-xl font-bold mb-4">VISI</h2>
-                <p className="font-semibold">
+                <h2 className="text-xl font-bold mb-4 text-center">VISI</h2>
+                <p className="font-semibold text-center">
                     {"\""} DESA DIRGAHAYU SEBAGAI LELMBAGA PELAYANAN MASYARAKAT YANG PROFESIONAL MENUJU KESEJAHTERAAN
                     MASYARAKAT YANG BERAKHLAKUL KARIMAH YANG DILANDASI IMAN DAN TAQWA {"\""}
                 </p>
