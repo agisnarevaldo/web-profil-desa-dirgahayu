@@ -1,5 +1,6 @@
 import Layanan from "@/app/components/layanan";
 import Jadwal from "@/app/components/jadwal";
+import Footer from "@/app/components/footer";
 
 export default function ServicePage () {
     return (
@@ -18,7 +19,8 @@ export default function ServicePage () {
                     <Jadwal/>
                 </div>
 
-            </div>
+            </div>      
+            <Footer />
         </main>
     )
 }
