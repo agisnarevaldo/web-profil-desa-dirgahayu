@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import {Icon} from "@iconify/react";
 
 interface Staff {
@@ -15,7 +15,7 @@ const staffData: Staff[] = [
         description: 'Kepala Desa berkedudukan sebagai Kepala Pemerintah Desa yang memimpin penyelenggaraan Pemerintahan Desa. Kepala Desa bertugas menyelenggarakan Pemerintah Desa, melaksanakan pembangunan Desa, pembinaan kemasyarakatan dan pemberdayaan masyarakat Desa.',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Asep'
     },
-{
+    {
         name: 'RINI SURYANI',
         position: 'SEKRETARIS DESA',
         description: 'Dalam rangka penyelenggaraan pemerintahan desa yang baik (good governance), Sekretaris Desa mempunyai tanggung jawab untuk membantu Kepala Desa di bidang administrasi dan memberikan pelayanan teknis administrasi kepada seluruh perangkat Pemerintah Desa dan masyarakat.',
@@ -35,7 +35,7 @@ const staffData: Staff[] = [
     },
     {
         name: 'DANY SOMANTIKA',
-    position: 'Kepala Dusun 5',     
+        position: 'Kepala Dusun 5',
         description: 'jflkajdf lakjflkalkj lakdjf',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Susi'
     },
@@ -75,7 +75,6 @@ const staffData: Staff[] = [
         description: 'KJSAFDKASJF',
         image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida'
     },
-    // Tambahkan staff lain di sini
     {
         name: 'RISMA',
         position: 'KEPWIL CIPEUSING',
@@ -116,7 +115,7 @@ const StaffSlide: React.FC = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 5000); // Slide otomatis setiap 5 detik
+        }, 3000); // Slide otomatis setiap 5 detik
         return () => clearInterval(interval);
     }, []);
 
@@ -124,16 +123,17 @@ const StaffSlide: React.FC = () => {
         <div id="struktur" className="mt-5 text-center py-10 flex flex-col border-t-2 border-bg">
             <h2 className="text-2xl font-bold mb-4">STAFF DESA DIRGAHAYU</h2>
             <p className="text-lg mb-8 w-2/3 mx-auto">
-                Berikut adalah profil staff desa mulai dari kepala desa, sekretaris desa dan jajarannya, serta deskripsi singkat terkait posisi pekerjaan yang di pegang.
+                Berikut adalah profil staff desa mulai dari kepala desa, sekretaris desa dan jajarannya, serta deskripsi
+                singkat terkait posisi pekerjaan yang di pegang.
             </p>
             <div className="relative flex items-center justify-center h-[400px]">
                 <button
-                    className="absolute top-1/2 left-0 bg-gray-200 p-2 rounded-full focus:outline-none"
+                    className="absolute top-1/2 left-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={prevSlide}
                 >
-                    <Icon icon="ep:arrow-left-bold" />
+                    <Icon icon="ep:arrow-left-bold"/>
                 </button>
-                <div className="transition-transform duration-1000 ease-in-out transform">
+                <div className="max-w-md transition-transform duration-1000 ease-in-out transform">
                     <div className="flex flex-col items-center gap-4">
                         <img
                             src={staffData[currentIndex].image}
@@ -148,10 +148,10 @@ const StaffSlide: React.FC = () => {
                     </div>
                 </div>
                 <button
-                    className="absolute top-1/2 right-0 bg-gray-200 p-2 rounded-full focus:outline-none"
+                    className="absolute top-1/2 right-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={nextSlide}
                 >
-                    <Icon icon="ep:arrow-right-bold" />
+                    <Icon icon="ep:arrow-right-bold"/>
                 </button>
             </div>
         </div>
