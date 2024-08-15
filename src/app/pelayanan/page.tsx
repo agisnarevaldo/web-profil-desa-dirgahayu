@@ -19,7 +19,7 @@ export default function ServicePage () {
                     <Jadwal/>
                 </div>
 
-            </div>      
+            </div>
             <Footer />
         </main>
     )
