@@ -13,7 +13,8 @@ export default function Home() {
         <ButtonTop />
         
         <ImagesSlidertest />
-        
+
+        <div className="mt-10"/>
         <Profile />
 
         <StaffSlide />
