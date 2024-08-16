@@ -31,9 +31,9 @@ export default  function Sorotan() {
     return (
     <div className="flex flex-col gap-10 py-10 w-full items-center" id="sorotan">
             <div>
-                <h1 className="text-2xl font-semibold text-center">Sorotan</h1>
+                <h1 className="text-2xl font-semibold text-center">Potensi Desa</h1>
                 <p className="w-2/3 mx-auto text-center">
-                    Berikut adalah beberapa sorotan terkait desa dirgahayu yang bisa menjadi informasi tambahan:
+                    Berikut adalah beberapa produk unggulan desa dirgahayu:
                 </p>
             </div>
             <SorotanCard
