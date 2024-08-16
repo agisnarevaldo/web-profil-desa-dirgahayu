@@ -128,7 +128,7 @@ const StaffSlide: React.FC = () => {
             </p>
             <div className="relative flex items-center justify-center h-[400px]">
                 <button
-                    className="absolute top-1/2 left-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
+                    className="absolute top-1/2 left-4 lg:left-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={prevSlide}
                 >
                     <Icon icon="ep:arrow-left-bold"/>
@@ -148,7 +148,7 @@ const StaffSlide: React.FC = () => {
                     </div>
                 </div>
                 <button
-                    className="absolute top-1/2 right-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
+                    className="absolute top-1/2 right-1 lg:right-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={nextSlide}
                 >
                     <Icon icon="ep:arrow-right-bold"/>
