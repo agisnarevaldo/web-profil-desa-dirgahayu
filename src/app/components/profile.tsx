@@ -36,7 +36,7 @@ export default function Profile() {
                         .
                         Tasikmalaya
                     </p>
-                    <Link href="#home">Kembali ↩</Link>
+                    {/*<Link href="#home">Kembali ↩</Link>*/}
                 </div>
             </div>
 
