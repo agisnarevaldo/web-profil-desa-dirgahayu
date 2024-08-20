@@ -8,15 +8,15 @@ export function ImagesSlidertest() {
 
     const imageData = [
         {
-            url: "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: "/kntr.jpeg",
             text: "Selamat Datang Di Website Resmi Desa Dirgahayu"
         },
         {
-            url: "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: "/ptrt.jpeg",
             text: "Sawah yang luas menjadi sumber Ekonomi Desa dan Daya Tarik Ekonomi"
         },
         {
-            url: "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: "https://plus.unsplash.com/premium_photo-1661963051410-e155d32a7c38?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  ",
             text: "Salah Satu Komoditas Ekonomi Desa\n" +
                 "Adalah Perkebunan Jagung"
         }
