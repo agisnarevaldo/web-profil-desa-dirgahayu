@@ -5,6 +5,7 @@ interface Staff {
     name: string;
     position: string;
     description: string;
+    function?: string;
     image: string;
 }
 
@@ -13,91 +14,106 @@ const staffData: Staff[] = [
         name: 'ASEP BUDI WAHYUDIN',
         position: 'KEPALA DESA DIRGAHAYU',
         description: 'Kepala Desa berkedudukan sebagai Kepala Pemerintah Desa yang memimpin penyelenggaraan Pemerintahan Desa. Kepala Desa bertugas menyelenggarakan Pemerintah Desa, melaksanakan pembangunan Desa, pembinaan kemasyarakatan dan pemberdayaan masyarakat Desa.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Asep'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Asep',
+        function: ''
     },
     {
         name: 'RINI SURYANI',
         position: 'SEKRETARIS DESA',
-        description: 'Dalam rangka penyelenggaraan pemerintahan desa yang baik (good governance), Sekretaris Desa mempunyai tanggung jawab untuk membantu Kepala Desa di bidang administrasi dan memberikan pelayanan teknis administrasi kepada seluruh perangkat Pemerintah Desa dan masyarakat.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Rini'
+        description: 'Bertugas membantu Kepala Desa dalam bidang administrasi pemerintahan ',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Rini',
+        function: 'Melaksanakan urusan ketatausahaan, umum, keuangan, perencanaan'
     },
     {
         name: 'DEWI ROSMAWATI',
         position: 'KAUR PERENCANAAN',
         description: 'Kepala seksi (Kasi) pemerintahan ini bertugas membantu Kepala Desa dalam melaksanakan tugas bidang pemerintahan desa. Selain tugas tersebut, Kasi Pemdes juga bertugas : melakukan tindakan yang mengakibatkan pengeluaran atas beban anggaran belanja sesuai bidang tugasnya.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dewi'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dewi',
+        function: ''
     },
     {
         name: 'SENDHY BUDHY UTAMA',
         position: 'KASI KESEJAHTERAAN',
         description: 'Kepala seksi kesejahteraan (Kasi Kesra) ini bertugas membantu Kepala Desa dalam melaksanakan tugas bidang pembangunan dan pemberdayaan masyarakat desa.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Sendhy'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Sendhy',
+        function: ''
     },
     {
         name: 'DANY SOMANTIKA',
         position: 'Kepala Dusun 5',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Susi'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Susi',
+        function: ''
     },
     {
         name: 'IDA SITI SOIDAH',
         position: 'KAUR TU DAN UMUM',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida',
+        function: ''
     },
     {
         name: 'DUDUNG',
         position: 'KASI PELAYANAN',
         description: 'kajdlajjkfj lkjdfs lskdfj ',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dudung'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dudung',
+        function: ''
     },
     {
         name: 'HENDI',
         position: 'KEPWIL PALUMBUNGAN',
         description: 'ksjd aksjd asd',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Hendi'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Hendi',
+        function: ''
     },
     {
         name: 'DENI',
         position: 'KEPWIL TROWEK',
         description: 'kjalkdjf lkjkl;ak lkajdf adf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Deni'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Deni',
+        function: ''
     },
     {
         name: 'AI NINING',
         position: 'KEPWIL GEKBRONG',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AI'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AI',
+        function: ''
     },
     {
         name: 'ANNISA RAHAYU',
         position: 'KEPWIL CIJOTANG',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida',
+        function: ''
     },
     {
         name: 'RISMA',
         position: 'KEPWIL CIPEUSING',
         description: 'ksjd aksjd asd',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Risma'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Risma',
+        function: ''
     },
     {
         name: 'YAYA ROHANA',
         position: 'KEPWIL CILENGKONG',
         description: 'kjalkdjf lkjkl;ak lkajdf adf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Yaya'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Yaya',
+        function: ''
     },
     {
         name: 'ANAN ROSIDIN',
         position: 'KEPWIL DESA',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Anan'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Anan',
+        function: ''
     },
     {
         name: 'ALI NURDIN',
         position: '-',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ali'
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ali',
+        function: ''
     },
 ];
 
@@ -145,6 +161,7 @@ const StaffSlide: React.FC = () => {
                             <span className="block text-lg font-normal">{staffData[currentIndex].position}</span>
                         </blockquote>
                         <p className="text-lg mb-4">{staffData[currentIndex].description}</p>
+                        <p className="text-lg">{staffData[currentIndex].function}</p>
                     </div>
                 </div>
                 <button
