@@ -4,8 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import {useEffect, useState} from "react";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 export default function Navbar() {
+    const pathname = usePathname();
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -44,7 +48,14 @@ export default function Navbar() {
                     <Link
                         href="/" role="menuitem"
                         tabIndex={0}
-                        className="font-medium hover:text-fg flex justify-center"
+                        className={
+                            clsx(
+                                "font-medium hover:text-fg flex justify-center",
+                                {
+                                    "text-fg": pathname === "/",
+                                }
+                            )
+                        }
                     >
                         Beranda
                     </Link>
@@ -54,7 +65,14 @@ export default function Navbar() {
                         href="/about"
                         role="menuitem"
                         tabIndex={0}
-                        className="font-medium hover:text-fg flex justify-center"
+                        className={
+                            clsx(
+                                "font-medium hover:text-fg flex justify-center",
+                                {
+                                    "text-fg": pathname === "/about",
+                                }
+                            )
+                        }
                     >
                         Tentang
                     </Link>
@@ -64,17 +82,31 @@ export default function Navbar() {
                         href="/pelayanan"
                         role="menuitem"
                         tabIndex={0}
-                        className="font-medium hover:text-fg flex justify-center"
+                        className={
+                            clsx(
+                                "font-medium hover:text-fg flex justify-center",
+                                {
+                                    "text-fg": pathname === "/pelayanan",
+                                }
+                            )
+                        }
                     >
                         Pelayanan
                     </Link>
                 </li>
                 <li role="none" className="py-2">
                     <Link
-                        href="/#struktur"
+                        href="/struktur"
                         role="menuitem"
                         tabIndex={0}
-                        className="font-medium hover:text-fg flex justify-center"
+                        className={
+                            clsx(
+                                "font-medium hover:text-fg flex justify-center",
+                                {
+                                    "text-fg": pathname === "/struktur",
+                                }
+                            )
+                        }
                     >
                         Struktur
                     </Link>
