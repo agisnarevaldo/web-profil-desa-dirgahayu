@@ -11,7 +11,15 @@ export default function Footer() {
             </div>
             <div
                 className="flex justify-center items-center mt-4 py-2 bg-slate-100 w-full backdrop-blur-lg bg-opacity-30">
-                <p>Created by <Link
+                <p>Depeloved by{" "}
+                    <Link
+                        href="https://www.instagram.com/alfianrasyidin/"
+                        className="underline"
+                    >
+                        agisnarevaldo
+                    </Link>
+                    <span> @ </span>
+                    <Link
                     href="https://www.instagram.com/kkn.dirgahayu2024/"
                     className="underline"
                 >
