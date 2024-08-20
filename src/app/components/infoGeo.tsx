@@ -10,7 +10,7 @@
             },
             jarak: {
                 keIbukotaNegara: '500 Km',
-                keIbukotaProvinsi: '76,7 Km',
+                keIbukotaProvinsi: '76,7 K  m',
                 keIbukotaKabupaten: '32 Km',
                 keIbuKotaKecamatan: '3 Km',
                 kePasarTerdekat: '7 Km'
@@ -18,7 +18,7 @@
         }
         return (
             <div className="container mx-auto mt-5">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Letak Geografis</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Letak Geografis</h2>
                 <table className="min-w-full table-auto rounded-lg">
                     <tbody className="text-gray-700">
                     <tr className="bg-gray-100 border-t border-b border-gray-200">
