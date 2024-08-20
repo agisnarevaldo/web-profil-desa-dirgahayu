@@ -10,7 +10,7 @@ export default function VisiMisi() {
                 </p>
             </div>
             <div className="border border-primary py-4 px-8 h-max rounded-lg">
-                <h2 className="text-xl font-bold mb-4">MISI</h2>
+                <h2 className="text-xl font-bold mb-4 text-center">MISI</h2>
                 <ol className="list-decimal">
                     <li>Meningkatkan Kesejahteraan Manusia (SDM).</li>
                     <li>Mewujudkan Peningkatan Pemberdayaan Masyarakat Menggali Sumber Daya Alam (SDA)</li>
