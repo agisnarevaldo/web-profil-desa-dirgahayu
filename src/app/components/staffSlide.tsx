@@ -14,77 +14,77 @@ const staffData: Staff[] = [
         name: 'ASEP BUDI WAHYUDIN',
         position: 'KEPALA DESA DIRGAHAYU',
         description: 'Kepala Desa berkedudukan sebagai Kepala Pemerintah Desa yang memimpin penyelenggaraan Pemerintahan Desa. Kepala Desa bertugas menyelenggarakan Pemerintah Desa, melaksanakan pembangunan Desa, pembinaan kemasyarakatan dan pemberdayaan masyarakat Desa.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Asep',
+        image: '/kepdes.png',
         function: ''
     },
     {
         name: 'RINI SURYANI',
         position: 'SEKRETARIS DESA',
         description: 'Bertugas membantu Kepala Desa dalam bidang administrasi pemerintahan ',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Rini',
+        image: '/6.png',
         function: 'Melaksanakan urusan ketatausahaan, umum, keuangan, perencanaan'
     },
     {
         name: 'DEWI ROSMAWATI',
         position: 'KAUR PERENCANAAN',
         description: 'Kepala seksi (Kasi) pemerintahan ini bertugas membantu Kepala Desa dalam melaksanakan tugas bidang pemerintahan desa. Selain tugas tersebut, Kasi Pemdes juga bertugas : melakukan tindakan yang mengakibatkan pengeluaran atas beban anggaran belanja sesuai bidang tugasnya.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dewi',
+        image: '/7.png',
         function: ''
     },
     {
         name: 'SENDHY BUDHY UTAMA',
         position: 'KASI KESEJAHTERAAN',
         description: 'Kepala seksi kesejahteraan (Kasi Kesra) ini bertugas membantu Kepala Desa dalam melaksanakan tugas bidang pembangunan dan pemberdayaan masyarakat desa.',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Sendhy',
+        image: '/10.png',
         function: ''
     },
     {
         name: 'DANY SOMANTIKA',
-        position: 'Kepala Dusun 5',
+        position: 'KASI KEPEMERINTAHAN',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Susi',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=DS',
         function: ''
     },
     {
         name: 'IDA SITI SOIDAH',
         position: 'KAUR TU DAN UMUM',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida',
+        image: '/11.png',
         function: ''
     },
     {
         name: 'DUDUNG',
         position: 'KASI PELAYANAN',
         description: 'kajdlajjkfj lkjdfs lskdfj ',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Dudung',
+        image: '/1.png',
         function: ''
     },
     {
         name: 'HENDI',
         position: 'KEPWIL PALUMBUNGAN',
         description: 'ksjd aksjd asd',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Hendi',
+        image: '/14.png',
         function: ''
     },
     {
         name: 'DENI',
         position: 'KEPWIL TROWEK',
         description: 'kjalkdjf lkjkl;ak lkajdf adf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Deni',
+        image: '/9.png',
         function: ''
     },
     {
         name: 'AI NINING',
         position: 'KEPWIL GEKBRONG',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AI',
+        image: '/6.png',
         function: ''
     },
     {
         name: 'ANNISA RAHAYU',
         position: 'KEPWIL CIJOTANG',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ida',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AR',
         function: ''
     },
     {
@@ -98,21 +98,21 @@ const staffData: Staff[] = [
         name: 'YAYA ROHANA',
         position: 'KEPWIL CILENGKONG',
         description: 'kjalkdjf lkjkl;ak lkajdf adf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Yaya',
+        image: '/13.png',
         function: ''
     },
     {
         name: 'ANAN ROSIDIN',
         position: 'KEPWIL DESA',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Anan',
+        image: '12.png',
         function: ''
     },
     {
         name: 'ALI NURDIN',
         position: '-',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Ali',
+        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AN',
         function: ''
     },
 ];
@@ -160,8 +160,8 @@ const StaffSlide: React.FC = () => {
                             {staffData[currentIndex].name}
                             <span className="block text-lg font-normal">{staffData[currentIndex].position}</span>
                         </blockquote>
-                        <p className="text-lg mb-4">{staffData[currentIndex].description}</p>
-                        <p className="text-lg">{staffData[currentIndex].function}</p>
+                        {/*<p className="text-lg mb-4">{staffData[currentIndex].description}</p>*/}
+                        {/*<p className="text-lg">{staffData[currentIndex].function}</p>*/}
                     </div>
                 </div>
                 <button
