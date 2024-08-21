@@ -29,7 +29,7 @@ export function HeroScrollDemo() {
                 />
             </ContainerScroll>
             <div className="flex flex-col justify-center text-justify px-4 md:px-12 py-2 gap-6">
-                <h1 className="text-2xl text-center">Profil Desa</h1>
+                <h1 className="text-2xl text-center font-semibold">Profil Desa</h1>
                 <p>
                     Dirgahayu adalah desa di kecamatan Kadipaten, Tasikmalaya, Jawa Barat, Indonesia. Dilalui oleh
                     kereta api jalur selatan dari Bandung tujuan Jogjakarta, Malang, Surabaya Gubeng dengan nama
