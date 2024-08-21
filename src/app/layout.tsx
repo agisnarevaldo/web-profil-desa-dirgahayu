@@ -16,14 +16,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode;        
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Navbar />
-        {children}
-      </body>
+    <head>
+        <meta name="google-site-verification" content="c0U-L68Dxi0JM1LzHnkLzRW8p2PTK3owhTx8BCSGBYw"/>
+    </head>
+    <body className={inter.className}>
+    <Navbar/>
+    {children}
+    </body>
     </html>
   );
 }
