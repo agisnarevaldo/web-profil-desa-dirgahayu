@@ -47,7 +47,7 @@ const sekdesData = [
         jabatan: "KASI PELAYANAN",
         pendidikan: "SLTA",
         noSk: "-",
-        image: "/dudung.jpeg"
+        image: "/1.png"
     },
 ]
 
