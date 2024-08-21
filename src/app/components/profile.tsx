@@ -40,9 +40,9 @@ export default function Profile() {
                 </div>
             </div>
 
-            <VisiMisi />
+            {/*<VisiMisi />*/}
 
-            <InfoGeo />
+            {/*<InfoGeo />*/}
 
             <DataDemografis />
 
