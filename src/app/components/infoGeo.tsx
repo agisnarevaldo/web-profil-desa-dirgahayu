@@ -18,7 +18,7 @@
         }
         return (
             <div className="container mx-auto mt-5">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Letak Geografis</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Letak Geografis</h2>
                 <table className="min-w-full table-auto rounded-lg">
                     <tbody className="text-gray-700">
                     <tr className="bg-gray-100 border-t border-b border-gray-200">
