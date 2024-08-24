@@ -24,7 +24,7 @@
                                     href="https://www.instagram.com/kkn.dirgahayu2024/"
                                     className="underline"
                                 >
-                                    KKN-PPM <UNPER></UNPER>
+                                    KKN-PPM UNPER
                                 </Link></p>
 
                         </div>
