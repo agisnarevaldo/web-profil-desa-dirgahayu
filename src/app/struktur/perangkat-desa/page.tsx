@@ -23,15 +23,15 @@ const perangkatDesaData          = [
         jabatan: "KEPWIL GEKBRONG",
         pendidikan: "SLTA",
         noSk: "800/141.3/01/KEP-DES/2019",
-        image: "/6.png"
+        image: "/4.png"
     },
     {
         id: 4,
-        nama: "ANNISA RAHAYU",
+        nama: "EDAH",
         jabatan: "KEPWIL CIJOTANG",
         pendidikan: "SLTA",
         noSk: "800/141.3/03/KEP-DES/2019",
-        image: "https://api.dicebear.com/9.x/initials/svg?seed=AR"
+        image: "/3.png"
     },
     {
         id: 5,
@@ -39,7 +39,7 @@ const perangkatDesaData          = [
         jabatan: "KEPWIL CIPEUSING",
         pendidikan: "SLTA",
         noSk: "800/141.3/02/KEP-DES/2017",
-        image: "https://api.dicebear.com/9.x/initials/svg?seed=RI"
+        image: "/2.png"
     },
     {
         id: 6,
@@ -49,23 +49,8 @@ const perangkatDesaData          = [
         noSk: "800/141.3/01/KEP-DES/2017",
         image: "/13.png"
     },
-    {
-        id: 7,
-        nama: "ANAN ROSIDIN",
-        jabatan: "OPERATOR DESA",
-        pendidikan: "SLTA",
-        noSk: "800/141.3/06/KEP-DES/2019",
-        image: "/12.png"
-    },
-    {
-        id: 8,
-        nama: "ALI NURDIN",
-        jabatan: "-",
-        pendidikan: "SLTA",
-        noSk: "800/141.3/07/KEP-DES/2019",
-        image: "https://api.dicebear.com/9.x/initials/svg?seed=AN"
-    }
-]
+    ]
+
 
 export default function Page() {
     return (
