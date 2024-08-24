@@ -4,7 +4,7 @@ import Jobdesk from "@/app/components/jobdesk";
 export default function Page() {
     return (
         <div className="w-full flex flex-col justify-center items-center">
-            <Image src="/STRUKTUR_ORGANISASI.jpg" alt="Kepala Desa" width={760} height={760}
+            <Image src="/STRUKTURFIX.jpeg" alt="Kepala Desa" width={760} height={760}
                    className="mx-auto mt-4"
             />
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 py-3 px-3">
