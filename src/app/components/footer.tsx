@@ -14,8 +14,8 @@
                             <span>&copy;2024 Desa Dirgahayu{" "}</span>
                             <p>{" "} Depeloved by{" "}
                                 <Link
-                                    href="https://www.instagram.com/alfianrasyidin/"
-                                    className="underline"           
+                                    href="https://www.instagram.com/agisnarevaldo/"
+                                    className="underline"
                                 >
                                     agisnarevaldo
                                 </Link>
@@ -24,7 +24,7 @@
                                     href="https://www.instagram.com/kkn.dirgahayu2024/"
                                     className="underline"
                                 >
-                                    KKN UNPER
+                                    KKN-PPM <UNPER></UNPER>
                                 </Link></p>
 
                         </div>
