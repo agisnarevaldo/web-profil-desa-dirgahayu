@@ -5,8 +5,8 @@
             batasWilayah: {
                 utara: 'Desa Kadipaten',
                 selatan: 'Desa Pasirhuni & Desa Citamba',
-                barat: 'Desa Cibahayu & Desa Mekarsari',
-                timur: 'Desa Kadipaten'
+                barat: 'Desa Kadipaten',
+                timur: 'Desa Cibahayu & Desa Mekarsari'
             },
             jarak: {
                 keIbukotaNegara: '500 Km',
@@ -48,7 +48,7 @@
                         <td className="px-4 py-2 font-medium">Sebelah Barat</td>
                         <td className="px-4 py-2">{data.batasWilayah.barat}</td>
                     </tr>
-                    <tr className="border-t border-b border-gray-200">
+                    <tr className="border-t border-b bo rder-gray-200">
                         <th colSpan={2} className="px-6 py-2 text-center font-bold">Jarak</th>
                     </tr>
                     <tr className="bg-gray-100 border-t border-b border-gray-200">
