@@ -100,7 +100,7 @@ export const ImagesSlider = ({
     const areImagesLoaded = loadedImages.length > 0;
 
     const handleClick = () => {
-        const targetElement = document.getElementById("sorotan");
+        const targetElement = document.getElementById("about");
         if (targetElement) {
             targetElement.scrollIntoView({behavior: "smooth"});
         }
