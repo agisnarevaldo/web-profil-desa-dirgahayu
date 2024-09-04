@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Icon} from "@iconify/react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface Staff {
     name: string;
@@ -42,7 +44,7 @@ const staffData: Staff[] = [
         name: 'DANY SOMANTIKA',
         position: 'KASI KEPEMERINTAHAN',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=DS',
+        image: '/5.png',
         function: ''
     },
     {
@@ -84,14 +86,14 @@ const staffData: Staff[] = [
         name: 'ANNISA RAHAYU',
         position: 'KEPWIL CIJOTANG',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AR',
+        image: '/ar.svg',
         function: ''
     },
     {
         name: 'RISMA',
         position: 'KEPWIL CIPEUSING',
         description: 'ksjd aksjd asd',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=Risma',
+        image: '/ri.svg',
         function: ''
     },
     {
@@ -105,14 +107,14 @@ const staffData: Staff[] = [
         name: 'ANAN ROSIDIN',
         position: 'KEPWIL DESA',
         description: 'jflkajdf lakjflkalkj lakdjf',
-        image: '12.png',
+        image: '/12.png',
         function: ''
     },
     {
         name: 'ALI NURDIN',
         position: '-',
         description: 'KJSAFDKASJF',
-        image: 'https://api.dicebear.com/9.x/initials/svg?seed=AN',
+        image: '/an.svg',
         function: ''
     },
 ];
@@ -131,7 +133,7 @@ const StaffSlide: React.FC = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 3000); // Slide otomatis setiap 5 detik
+        }, 3000); // Slide otomatis setiap 5 detik  
         return () => clearInterval(interval);
     }, []);
 
@@ -140,32 +142,43 @@ const StaffSlide: React.FC = () => {
             <h2 className="text-2xl font-bold mb-4">STAFF DESA DIRGAHAYU</h2>
             <p className="text-lg mb-8 w-2/3 mx-auto">
                 Berikut adalah profil staff desa mulai dari kepala desa, sekretaris desa dan jajarannya, serta deskripsi
-                singkat terkait posisi pekerjaan yang di pegang.
+                singkat terkait posisi pekerjaan yang dipegang
             </p>
             <div className="relative flex items-center justify-center h-[400px]">
                 <button
-                    className="absolute top-1/2 left-4 lg:left-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
+                    className="absolute top-1/2 left-4 lg:left-1/3 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={prevSlide}
                 >
                     <Icon icon="ep:arrow-left-bold"/>
                 </button>
-                <div className="max-w-md transition-transform duration-1000 ease-in-out transform">
+            <div className="max-w-md transition-transform duration-2000 ease-in-out transform">
                     <div className="flex flex-col items-center gap-4">
-                        <img
-                            src={staffData[currentIndex].image}
-                            alt={staffData[currentIndex].name}
-                            className="rounded-full w-40 h-40 object-cover mb-4"
-                        />
+                        <div className="p-2 rounded-lg bg-bg">
+                            <Image
+                                src={staffData[currentIndex].image}
+                                alt={staffData[currentIndex].name}
+                                width={200}
+                                height={100}
+                                className="rounded-lg object-cover"
+                            />
+                        </div>
                         <blockquote className="text-xl font-semibold">
                             {staffData[currentIndex].name}
                             <span className="block text-lg font-normal">{staffData[currentIndex].position}</span>
                         </blockquote>
                         {/*<p className="text-lg mb-4">{staffData[currentIndex].description}</p>*/}
                         {/*<p className="text-lg">{staffData[currentIndex].function}</p>*/}
+                        <Link
+                            href="/struktur"
+                            className="text-blue-500 hover:text-blue-700 flex items-center gap-2"
+                        >
+                            Lihat Selengkapnya
+                            <Icon icon="tabler:arrow-bounce" />
+                        </Link>
                     </div>
                 </div>
                 <button
-                    className="absolute top-1/2 right-1 lg:right-1/4 bg-gray-200 p-2 rounded-full focus:outline-none"
+                    className="absolute top-1/2 right-1 lg:right-1/3 bg-gray-200 p-2 rounded-full focus:outline-none"
                     onClick={nextSlide}
                 >
                     <Icon icon="ep:arrow-right-bold"/>
