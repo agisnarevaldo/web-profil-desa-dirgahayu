@@ -12,7 +12,7 @@ interface CardProfileProps {
 export default function CardProfile({src, nama, jabatan, pendidikan, noSk, className}: Readonly<CardProfileProps>) {
     return (
         <div className={className}>
-            <h1 className="text-2xl mb-2">{jabatan}</h1>
+            <h1 className="text-lg font-medium mb-2">{jabatan}</h1>
             <div className={`flex mx-auto items-center w-full gap-4`}>
                 <Image src={src} alt="Photo" width={150} height={150} className="rounded-md"/>
                 <table>
